@@ -16,6 +16,7 @@
 
 .footer-left {
   text-align: left;
+  margin-left: 150px;
 }
 
 .footer-left p {
@@ -36,7 +37,7 @@
 .social-icons {
   display: flex;
   justify-content: flex-end;
-  margin-right: 30px;
+  margin-right: 170px;
 }
 
 .social-icons a {
@@ -99,10 +100,22 @@
   .footer {
     flex-direction: column;
     text-align: center;
+    padding: 10px;
+  }
+
+  .footer-left {
+    margin-left: 0;
+    text-align: center;
   }
 
   .social-icons {
     margin-top: 10px;
     justify-content: center;
+    margin-right: 0;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+    margin: 0 5px;
   }
 }
