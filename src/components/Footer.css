@@ -1,0 +1,108 @@
+/* Footer styles */
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  background-image: url("../Assets/pexels.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-left p {
+  margin: 5px 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.footer-left p:first-child {
+  font-weight: 600;
+}
+
+.footer-left p:last-child {
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* Social Icons styling */
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ddd;
+}
+
+/* Tooltip container for hover effect */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position it above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Circular icon background */
+.icon-circle {
+  background-color: #dddddd83;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.icon-circle:hover {
+  background-color: #922692a1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+    justify-content: center;
+  }
+}

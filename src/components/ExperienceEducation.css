@@ -1,0 +1,54 @@
+.experience-education-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  .experience-section, .education-section {
+    flex: 1;
+    background: linear-gradient(135deg, #e0e0e0, #ffffff);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .experience-section:hover, .education-section:hover {
+    transform: translateY(-5px);
+  }
+  
+  .experience-section h2, .education-section h2 {
+    font-size: 28px;
+    color: #333;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .experience-section ul, .education-section ul {
+    padding-left: 20px;
+    list-style: none;
+  }
+  
+  .experience-section li, .education-section li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .experience-section li:before, .education-section li:before {
+    content: '•';
+    font-size: 18px;
+    color: #555;
+    position: absolute;
+    left: -20px;
+  }
+  
+  @media (max-width: 768px) {
+    .experience-education-container {
+      flex-direction: column;
+    }
+  }
+  

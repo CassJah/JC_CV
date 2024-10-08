@@ -1,0 +1,154 @@
+/* Import professional fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap");
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Header styling with professional font */
+.header {
+  background-image: url("../Assets/pexels.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.header-content {
+  max-width: 700px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid white;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 48px;
+  margin: 10px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+.hire-btn,
+.download-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 0 10px;
+  background-color: #ffffff33;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hire-btn:hover,
+.download-btn:hover {
+  background-color: #922692a1;
+  color: #ffffff;
+}
+
+/* Styling for social icons with clean hover effects */
+.social-icons {
+  margin-top: 0px;
+}
+
+.social-icons a {
+  font-size: 30px;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Tooltip container for hover effect */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Tooltip position above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Circular icon background */
+.icon-circle {
+  background-color: #dddddd83;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.icon-circle:hover {
+  background-color: #922692a1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hire-btn,
+  .download-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .social-icons a {
+    font-size: 28px;
+  }
+}

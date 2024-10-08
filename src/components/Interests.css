@@ -1,0 +1,51 @@
+.interests {
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
+  padding: 30px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.interests-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.interests-list li {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.interests-list li:hover {
+  background-color: #922692a1;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .interests {
+    width: 100%;
+  }
+
+  .interests-list li {
+    font-size: 18px;
+  }
+}
