@@ -12,18 +12,21 @@ const Footer = () => {
         <p>Full Stack Developer | Cloud Engineer</p>
       </div>
       <div className="social-icons">
+        {/* Email without mailto link */}
         <div className="tooltip-container">
-          <a href="mailto:j.cassidy@outlook.co.nz" className="icon-circle">
+          <div className="icon-circle">
             <FontAwesomeIcon icon={faEnvelope} />
-          </a>
+          </div>
           <span className="tooltip-text">j.cassidy@outlook.co.nz</span>
         </div>
+        {/* Phone link */}
         <div className="tooltip-container">
           <a href="tel:+641234567" className="icon-circle">
             <FontAwesomeIcon icon={faPhone} />
           </a>
           <span className="tooltip-text">+64 123 4567</span>
         </div>
+        {/* Social links */}
         <a
           href="https://www.linkedin.com/in/javan-cassidy-8b119a332/"
           target="_blank"

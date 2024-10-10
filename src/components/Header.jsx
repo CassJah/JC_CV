@@ -65,9 +65,10 @@ const Header = () => {
         <div className="social-icons-container">
           <div className="social-icons">
             <div className="tooltip-container">
-              <a href="mailto:j.cassidy@outlook.co.nz" className="icon-circle">
+              {/* Removed mailto link */}
+              <div className="icon-circle">
                 <FontAwesomeIcon icon={faEnvelope} />
-              </a>
+              </div>
               <span className="tooltip-text">j.cassidy@outlook.co.nz</span>
             </div>
             <div className="tooltip-container">
