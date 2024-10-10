@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "./static/css/main.14082d2b.css",
+    "main.js": "./static/js/main.8e5b6b40.js",
+    "static/js/453.651cb5c8.chunk.js": "./static/js/453.651cb5c8.chunk.js",
+    "static/media/business.jpg": "./static/media/business.55df7d02379b5b33bbab.jpg",
+    "static/media/chillboarders color hi res send.jpg": "./static/media/chillboarders color hi res send.b7886cbb016a381b6292.jpg",
+    "static/media/Geotechnical.jpg": "./static/media/Geotechnical.6a939b9cb35b77b97c88.jpg",
+    "static/media/electric.jpg": "./static/media/electric.6cab1c0a84e5b749c8c0.jpg",
+    "static/media/pexels.jpg": "./static/media/pexels.04a63626f2c5950a86d9.jpg",
+    "static/media/software.jpg": "./static/media/software.54b40cd737102e1051ec.jpg",
+    "static/media/surf.jpg": "./static/media/surf.843e3a3d160b2090d8ac.jpg",
+    "static/media/travel.jpg": "./static/media/travel.0ee86f7aaae3c8857f4d.jpg",
+    "index.html": "./index.html",
+    "main.14082d2b.css.map": "./static/css/main.14082d2b.css.map",
+    "main.8e5b6b40.js.map": "./static/js/main.8e5b6b40.js.map",
+    "453.651cb5c8.chunk.js.map": "./static/js/453.651cb5c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14082d2b.css",
+    "static/js/main.8e5b6b40.js"
+  ]
+}
