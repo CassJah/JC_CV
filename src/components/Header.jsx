@@ -8,7 +8,9 @@ import {
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import "./Header.css"; // Assuming styles are in Header.css
+import "./Header.css";
+import chillboardersImage from "../Assets/chillboarders color hi res send.jpg";
+import { Link } from "react-scroll"; // Import the react-scroll Link
 
 const Header = () => {
   return (
@@ -16,8 +18,8 @@ const Header = () => {
       <div className="header-content">
         {/* Profile Image */}
         <img
-          src="/path/to/your/image.png"
-          alt="Profile"
+          src={chillboardersImage}
+          alt="Chillboarders Profile"
           className="profile-pic"
         />
 
@@ -27,7 +29,9 @@ const Header = () => {
 
         {/* Buttons */}
         <div className="buttons">
-          <button className="hire-btn">Hire Me</button>
+          <Link to="contact" smooth={true} duration={1000}>
+            <button className="hire-btn">Hire Me</button>
+          </Link>
           <button className="download-btn">Download CV</button>
         </div>
 
@@ -47,7 +51,7 @@ const Header = () => {
               <span className="tooltip-text">+64 123 4567</span>
             </div>
             <a
-              href="https://www.linkedin.com/in/jvmacuto"
+              href="https://www.linkedin.com/in/javan-cassidy-8b119a332/"
               target="_blank"
               rel="noopener noreferrer"
               className="icon-circle"

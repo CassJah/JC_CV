@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 import Interests from "./components/Interests";
 import References from "./components/References";
 import Footer from "./components/Footer";
-import Banner from "./components/Banner";
+import ContactForm from "./components/ContactForm"; // Import the new component
 import "./index.css";
 
 function App() {
@@ -17,9 +17,9 @@ function App() {
       <Summary />
       <ExperienceEducation />
       <Skills />
-      <Banner />
       <Projects />
       <Interests />
+      <ContactForm /> {/* Add ContactForm here */}
       <References />
       <Footer />
     </div>

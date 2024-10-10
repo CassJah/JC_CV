@@ -31,7 +31,7 @@ const Footer = () => {
           <span className="tooltip-text">+64 123 4567</span>
         </div>
         <a
-          href="https://www.linkedin.com/in/jvmacuto"
+          href="https://www.linkedin.com/in/javan-cassidy-8b119a332/"
           target="_blank"
           rel="noopener noreferrer"
           className="icon-circle"
