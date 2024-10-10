@@ -9,7 +9,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import "./Header.css";
-import chillboardersImage from "../Assets/chillboarders color hi res send.jpg";
+import chillboardersImage from "../Assets/javan.jpg";
 import { Link } from "react-scroll"; // Import the react-scroll Link
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas"; // Import html2canvas
