@@ -11,8 +11,38 @@ import {
 import "./Header.css";
 import chillboardersImage from "../Assets/chillboarders color hi res send.jpg";
 import { Link } from "react-scroll"; // Import the react-scroll Link
+import jsPDF from "jspdf";
+import html2canvas from "html2canvas"; // Import html2canvas
 
 const Header = () => {
+  // Function to generate and download the PDF from the webpage
+  const downloadPDF = () => {
+    const input = document.body; // You can change this to the specific element you want to capture
+
+    // Use html2canvas to capture the element
+    html2canvas(input, { scale: 2 }).then((canvas) => {
+      const imgData = canvas.toDataURL("image/png");
+      const pdf = new jsPDF("p", "mm", "a4");
+      const imgWidth = 210; // A4 width in mm
+      const pageHeight = 297; // A4 height in mm
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      let heightLeft = imgHeight;
+      let position = 0;
+
+      pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
+      heightLeft -= pageHeight;
+
+      while (heightLeft >= 0) {
+        position = heightLeft - imgHeight;
+        pdf.addPage();
+        pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
+        heightLeft -= pageHeight;
+      }
+
+      pdf.save("Javan_Cassidy_CV.pdf");
+    });
+  };
+
   return (
     <header className="header">
       <div className="header-content">
@@ -32,7 +62,9 @@ const Header = () => {
           <Link to="contact" smooth={true} duration={1000}>
             <button className="hire-btn">Hire Me</button>
           </Link>
-          <button className="download-btn">Download CV</button>
+          <button className="download-btn" onClick={downloadPDF}>
+            Download CV
+          </button>
         </div>
 
         {/* Social Icons with Tooltips */}
