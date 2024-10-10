@@ -1,13 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import {
-  faLinkedin,
-  faGithub,
-  faFacebook,
-  faTwitter,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.css"; // Assuming you'll add this CSS file
 
 const Footer = () => {
@@ -45,30 +39,6 @@ const Footer = () => {
           className="icon-circle"
         >
           <FontAwesomeIcon icon={faGithub} />
-        </a>
-        <a
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="icon-circle"
-        >
-          <FontAwesomeIcon icon={faFacebook} />
-        </a>
-        <a
-          href="https://twitter.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="icon-circle"
-        >
-          <FontAwesomeIcon icon={faTwitter} />
-        </a>
-        <a
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="icon-circle"
-        >
-          <FontAwesomeIcon icon={faInstagram} />
         </a>
       </div>
     </footer>
