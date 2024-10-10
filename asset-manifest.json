@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "./static/css/main.14082d2b.css",
-    "main.js": "./static/js/main.8e5b6b40.js",
+    "main.css": "./static/css/main.87a781db.css",
+    "main.js": "./static/js/main.82c43758.js",
+    "static/js/213.49ecef52.chunk.js": "./static/js/213.49ecef52.chunk.js",
+    "static/js/732.ca792e21.chunk.js": "./static/js/732.ca792e21.chunk.js",
     "static/js/453.651cb5c8.chunk.js": "./static/js/453.651cb5c8.chunk.js",
     "static/media/business.jpg": "./static/media/business.55df7d02379b5b33bbab.jpg",
     "static/media/chillboarders color hi res send.jpg": "./static/media/chillboarders color hi res send.b7886cbb016a381b6292.jpg",
@@ -12,12 +14,14 @@
     "static/media/surf.jpg": "./static/media/surf.843e3a3d160b2090d8ac.jpg",
     "static/media/travel.jpg": "./static/media/travel.0ee86f7aaae3c8857f4d.jpg",
     "index.html": "./index.html",
-    "main.14082d2b.css.map": "./static/css/main.14082d2b.css.map",
-    "main.8e5b6b40.js.map": "./static/js/main.8e5b6b40.js.map",
+    "main.87a781db.css.map": "./static/css/main.87a781db.css.map",
+    "main.82c43758.js.map": "./static/js/main.82c43758.js.map",
+    "213.49ecef52.chunk.js.map": "./static/js/213.49ecef52.chunk.js.map",
+    "732.ca792e21.chunk.js.map": "./static/js/732.ca792e21.chunk.js.map",
     "453.651cb5c8.chunk.js.map": "./static/js/453.651cb5c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14082d2b.css",
-    "static/js/main.8e5b6b40.js"
+    "static/css/main.87a781db.css",
+    "static/js/main.82c43758.js"
   ]
 }
